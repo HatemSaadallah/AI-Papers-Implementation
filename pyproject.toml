@@ -1,0 +1,20 @@
+[project]
+name = "transformer-with-attention"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hatem Saadallah", email = "saadallah.r.hatem@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+transformer-with-attention = "transformer_with_attention:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
